@@ -1,0 +1,17 @@
+extends /design.shell/src/layout
+
+block stylesheets
+  link(rel="stylesheet" href="styles/vendors.css")
+  link(rel="stylesheet" href="styles/main.css")
+  link(href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.11.1/slimselect.min.css" rel="stylesheet")
+  link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css")
+  link(rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mobius1/selectr@latest/dist/selectr.min.css")
+
+
+
+block content
+  include pug/searchResults
+  include pug/tags
+  include pug/types
+  include pug/content
+  include pug/scripts

@@ -1,0 +1,49 @@
+.container
+  .row 
+    .col-md-9
+      h2.azulsenado Buscar Conteúdo
+
+      .form-group.l-letter-lg
+        .row
+          .col-md-12
+            .input-group.stylish-input-group
+              input#buscaInput.form-control(type='text', placeholder='Buscar')
+              span.input-group-addon
+                span.glyphicon.glyphicon-search
+            a#linkBuscaAvancada Filtros de busca avançada
+
+      #buscaAvancada
+        .form-group.l-letter-lg
+          .row
+            .col-md-12
+              label Tipo de Conteúdo
+              .checkbox
+                +colcheck('Áudio')
+                +colcheck('Matéria')
+                +colcheck('Infográfico')
+                +colcheck('Matéria Especial')
+                +colcheck('Vídeo')
+                +colcheck('Infomatéria')
+          
+          .form-group.l-letter-lg
+            .row
+              .col-md-6
+                label Tags
+                select#multiple
+                  +tags()
+                  
+              .col-md-6
+                label Data Inicial e Final
+                input.form-control#datePickr(type='text', placeholder='dd/mm/aaaa até dd/mm/aaaa')
+
+          .form-group
+            .row
+              .col-md-12
+                button.btn.btn-primary.pull-right Buscar
+        
+      - var qtdItens = 3
+      h3.azulsenado Resultados da Busca - #{qtdItens} itens
+      +searchResults()
+
+      
+

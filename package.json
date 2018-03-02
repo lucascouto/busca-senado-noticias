@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "dev": "mosaaaico2 dev",
+    "build": "mosaaaico2 build"
+  },
+  "devDependencies": {
+    "mosaaaico2": "fabianonunes/mosaaaico2"
+  },
+  "dependencies": {
+    "bootstrap": "3",
+    "datatables.net": "^1.10.15",
+    "datatables.net-bs": "^1.10.15",
+    "datatables.net-buttons": "^1.3.1",
+    "datatables.net-buttons-bs": "^1.3.1",
+    "datatables.net-dt": "^1.10.15",
+    "design.shell": "agenciasenado/design.shell",
+    "flatpickr": "^4.3.2",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "mobius1-selectr": "^2.4.1",
+    "senado.css": "agenciasenado/senado.css"
+  }
+}
